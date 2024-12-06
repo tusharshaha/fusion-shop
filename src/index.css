@@ -30,6 +30,10 @@
   p {
     @apply text-sm sm:text-base;
   }
+  :root {
+
+    --radius: 0.5rem
+  }
 }
 
 .cus-container {
