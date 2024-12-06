@@ -6,7 +6,9 @@ import CartButton from "./CartButton";
 const menu = (
   <ul className="flex items-center flex-col md:flex-row gap-2 md:gap-4 text-xl text-primary md:text-base-100 font-medium">
     <li className="w-full border-2 border-primary md:border-none rounded-full">
-      <Link to="/products" className="font-bold">Products</Link>
+      <Link to="/products" className="font-bold">
+        Products
+      </Link>
     </li>
   </ul>
 );
@@ -38,7 +40,7 @@ const Navbar: React.FC = () => {
           Fusion Shop
         </Link>
         <div className="hidden md:block">{menu}</div>
-        <CartButton className="hidden md:block"/>
+        <CartButton className="hidden md:block" />
 
         <div ref={menuRef} className="relative flex items-center md:hidden">
           <button onClick={handleMenu} className="text-2xl">
@@ -48,10 +50,12 @@ const Navbar: React.FC = () => {
           <div
             className={`${
               navMenu ? "" : "hidden"
-            } absolute top-14 right-0 rounded-md bg-red-500 w-[200px] p-4 text-center`}
+            } absolute top-14 right-0 rounded-md bg-gray-600 text-white w-[200px] p-4 text-center`}
           >
             {menu}
-            <CartButton className="block md:hidden"/>
+            <div className="w-full flex items-center justify-center mt-6">
+              <CartButton className="block md:hidden " />
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,13 @@
+/* playfare google font  */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   h1 {
-    @apply text-[3rem];
+    @apply text-[2rem] md:text-[3.2rem];
   }
 
   h2 {
@@ -37,6 +40,11 @@
 
 .cus-container {
   @apply container mx-auto px-5;
+}
+
+.header {
+  font-family: "Playfair", serif;
+  font-style: italic;
 }
 
 .trans {
