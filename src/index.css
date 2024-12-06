@@ -31,8 +31,7 @@
     @apply text-sm sm:text-base;
   }
   :root {
-
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }
 

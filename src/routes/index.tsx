@@ -2,7 +2,11 @@ import Layout from "@/components/Layout";
 import Cart from "@/pages/Cart";
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
-import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -10,8 +14,8 @@ const routes = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="products" element={<Products />} />
       <Route path="cart" element={<Cart />} />
-    </Route>
-  )
-)
+    </Route>,
+  ),
+);
 
-export default routes
+export default routes;
