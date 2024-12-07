@@ -17,7 +17,7 @@ const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
         curPrice: product.price,
         subTotal: product.price,
         qty: 1,
-      })
+      }),
     );
     dispatch(getTotal());
     toast.success("Successfully Added to cart", { id: "cart" });
