@@ -46,7 +46,7 @@ const Table: React.FC = () => {
       <table className="text-center w-full border-collapse border">
         <thead className="">
           <tr className="bg-slate-600 text-white [&>*]:border [&>*]:border-white">
-            <th>Delete</th>
+            <th>Action</th>
             <th>Image</th>
             <th>Name</th>
             <th>Price</th>
@@ -111,7 +111,7 @@ const Table: React.FC = () => {
               <div className="flex items-center justify-between">
                 <div className="cupon">
                   <span className="font-bold text-xl">
-                    Total: {totalAmount}
+                    Total: ${totalAmount}
                   </span>
                 </div>
                 <div className="text-end">

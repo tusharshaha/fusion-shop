@@ -16,9 +16,9 @@ const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
         curPrice: product.price,
         subTotal: product.price,
         qty: 1,
-      })
+      }),
     );
-    dispatch(getTotal())
+    dispatch(getTotal());
     toast.success("Successfully Added to cart", { id: "cart" });
   };
   return (
@@ -34,7 +34,10 @@ const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
         <span className="text-xl font-bold text-orange-500">
           ${product.price}
         </span>
-        <button onClick={handleAddToCart} className="border border-orange-600 hover:bg-orange-600 hover:text-white trans text-orange-600 font-bold py-2 px-6 rounded-md">
+        <button
+          onClick={handleAddToCart}
+          className="border border-orange-600 hover:bg-orange-600 hover:text-white trans text-orange-600 font-bold py-2 px-6 rounded-md"
+        >
           Add To Cart
         </button>
       </div>
