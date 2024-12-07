@@ -9,8 +9,8 @@ const ProductSection: React.FC = () => {
   const { data, loading } = useProducts();
   const navigate = useNavigate();
 
-  const handleViewProducts = ()=> navigate("/products")
- 
+  const handleViewProducts = () => navigate("/products");
+
   const skeltons = new Array(8).fill(0);
 
   return (
@@ -33,7 +33,10 @@ const ProductSection: React.FC = () => {
         </div>
       )}
       <div className="text-center mt-10">
-        <button onClick={handleViewProducts} className=" py-2 px-6 rounded-md bg-orange-600 text-white font-bold">
+        <button
+          onClick={handleViewProducts}
+          className=" py-2 px-6 rounded-md bg-orange-600 text-white font-bold"
+        >
           View All
         </button>
       </div>
