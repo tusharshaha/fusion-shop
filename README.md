@@ -50,18 +50,21 @@ Ensure you have the following installed on your system:
 
 ## Running The Project
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
+
 ## For Testing The Project
 
-   ```bash
-   npm run test
-   ```
-   or
-   ```bash
-   npm run test:ui
-   ```
+```bash
+npm run test
+```
+
+or
+
+```bash
+npm run test:ui
+```
 
 ## Build For Production
 
