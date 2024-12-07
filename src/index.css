@@ -47,7 +47,7 @@
   font-style: italic;
 }
 
-.hero-banner{
+.hero-banner {
   @apply bg-[url("/shoping.png")] bg-no-repeat bg-contain bg-bottom bg-blend-luminosity;
 }
 
