@@ -22,7 +22,10 @@ const useProducts = () => {
 
         // Create a map for quick photo lookup
         const photoMap = Object.fromEntries(
-          photos.map((photo: { id: number; url: string; }) => [photo.id, photo.url]),
+          photos.map((photo: { id: number; url: string }) => [
+            photo.id,
+            photo.url,
+          ]),
         );
 
         // Merge the posts with their corresponding image URLs
