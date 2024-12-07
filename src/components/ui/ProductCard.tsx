@@ -1,12 +1,13 @@
 import { addToCart, getTotal } from "@/redux/features/cartSlice";
 import { AppDispatch } from "@/redux/store";
 import { Products } from "@/types";
-import React from "react";
+import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 
 const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
   const dispatch = useDispatch<AppDispatch>();
+  const [load, setLoad] = useState(true);
   const handleAddToCart = () => {
     dispatch(
       addToCart({
@@ -16,14 +17,21 @@ const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
         curPrice: product.price,
         subTotal: product.price,
         qty: 1,
-      }),
+      })
     );
     dispatch(getTotal());
     toast.success("Successfully Added to cart", { id: "cart" });
   };
+  const handleLoad = () => {
+    setLoad(false);
+  };
   return (
     <div className="shadow-md rounded-md p-3 flex flex-col h-full border">
+      {load && (
+        <div className="animate-spin size-[70px] border-8 border-b-white rounded-full border-orange-500 bg-white mx-auto"></div>
+      )}
       <img
+        onLoad={handleLoad}
         src={product.imgUrl}
         className="w-full h-[250px]"
         alt="product image"

@@ -1,6 +1,6 @@
 # Fusion Shop
 
-This is a E-Commerce application designed for [A simmple assignment]. The project is built using [React, Typescript, Redux, Tailwind]. Visit [Fusion Shop](https://reactjs.org)
+This is a E-Commerce application designed for [A simmple assignment]. The project is built using [React, Typescript, Redux, Tailwind]. Visit [Fusion Shop](https://fusion-shop-bp2p.vercel.app/)
 
 ---
 
