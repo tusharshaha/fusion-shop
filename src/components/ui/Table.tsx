@@ -60,7 +60,7 @@ const Table: React.FC = () => {
               <td colSpan={6} className="py-5 text-center">
                 <p className="mb-0">
                   You have no product in cart. Go to{" "}
-                  <Link to="/shop" className="hover-red">
+                  <Link to="/products" className="text-orange-500 underline">
                     Shop
                   </Link>
                 </p>
