@@ -2,6 +2,7 @@
   "files": [],
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["vite/client", "vitest", "vitest/globals"],
     "paths": {
       "@/*": ["./src/*"]
     }
