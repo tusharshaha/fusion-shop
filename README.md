@@ -50,10 +50,17 @@ Ensure you have the following installed on your system:
 
 ## Running The Project
 
-1. Clone the repository:
-
    ```bash
    npm run dev
+   ```
+## For Testing The Project
+
+   ```bash
+   npm run test
+   ```
+   or
+   ```bash
+   npm run test:ui
    ```
 
 ## Build For Production
