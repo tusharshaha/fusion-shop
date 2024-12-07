@@ -2,7 +2,6 @@
 import { Products } from "@/types";
 import { useEffect, useState } from "react";
 
-
 const useProducts = () => {
   const [data, setData] = useState<Products[]>([]);
   const [loading, setLoading] = useState(true);
@@ -23,14 +22,14 @@ const useProducts = () => {
 
         // Create a map for quick photo lookup
         const photoMap = Object.fromEntries(
-          photos.map((photo) => [photo.id, photo.thumbnailUrl])
+          photos.map((photo) => [photo.id, photo.url]),
         );
 
         // Merge the posts with their corresponding image URLs
         const mergedData = posts.map((post: any) => ({
           ...post,
-          imageUrl: photoMap[post.id] || null,
-          price: 100
+          imgUrl: photoMap[post.id] || null,
+          price: 100,
         }));
 
         setData(mergedData); // Update state with the merged data
@@ -45,7 +44,7 @@ const useProducts = () => {
     fetchData();
   }, []);
 
-  return {data, loading, error}
+  return { data, loading, error };
 };
 
 export default useProducts;
