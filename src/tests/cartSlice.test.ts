@@ -120,7 +120,7 @@ describe("cartSlice reducer", () => {
 
     const updatedState = cartSlice.reducer(
       initialState,
-      handleQty({ id: 1, qty: 3 })
+      handleQty({ id: 1, qty: 3 }),
     );
 
     expect(updatedState.items[0].qty).toBe(3);
