@@ -7,10 +7,10 @@ export type Products = {
 };
 
 export type CartType = {
-  id: string,
-  img: string,
-  name: string,
-  curPrice: number,
-  subTotal: number,
-  qty: number
-}
+  id: number;
+  imgUrl: string;
+  name: string;
+  curPrice: number;
+  subTotal: number;
+  qty: number;
+};

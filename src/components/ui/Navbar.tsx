@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           <div
             className={`${
               navMenu ? "" : "hidden"
-            } absolute top-14 right-0 rounded-md bg-gray-600 text-white w-[200px] p-4 text-center`}
+            } absolute top-14 right-0 rounded-md bg-gray-600 border text-white w-[200px] p-4 text-center`}
           >
             {menu}
             <div className="w-full flex items-center justify-center mt-6">
